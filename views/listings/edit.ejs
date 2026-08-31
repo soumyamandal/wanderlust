@@ -1,0 +1,122 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Edit Listing</title>
+
+    <link rel="stylesheet" href="/css/edit.css">
+</head>
+
+<body>
+
+    <h3>Edit your Listing</h3>
+
+    <form
+        method="POST"
+        action="/listings/<%= listing._id %>?_method=PUT"
+        enctype="multipart/form-data"
+    >
+
+        <!-- Title -->
+        <label for="title">Title</label>
+        <br>
+        <input
+            id="title"
+            name="listing[title]"
+            value="<%= listing.title %>"
+            placeholder="Enter title"
+            type="text"
+            required
+        />
+        <br><br>
+
+
+        <!-- Description -->
+        <label for="description">Description</label>
+        <br>
+        <textarea
+            id="description"
+            name="listing[description]"
+            placeholder="Enter description"
+            rows="5"
+        ><%= listing.description %></textarea>
+        <br><br>
+
+
+        <!-- Image -->
+        <label for="image">Upload New Image</label>
+        <br>
+        <input
+            id="image"
+            name="listing[image]"
+            type="file"
+            
+        />
+        <br><br>
+
+        <!-- Current Image -->
+        <label>Current Image</label>
+        <br>
+        <img
+            src="<%= listing.image.url %>"
+            alt="Current listing image"
+            width="200"
+        />
+        <br><br>
+
+
+        <!-- Price -->
+        <label for="price">Price</label>
+        <br>
+        <input
+            id="price"
+            name="listing[price]"
+            value="<%= listing.price %>"
+            placeholder="Enter price"
+            type="number"
+            required
+        />
+        <br><br>
+
+
+        <!-- Country -->
+        <label for="country">Country</label>
+        <br>
+        <input
+            id="country"
+            name="listing[country]"
+            value="<%= listing.country %>"
+            placeholder="Enter country"
+            type="text"
+            required
+        />
+        <br><br>
+
+
+        <!-- Location -->
+        <label for="location">Location</label>
+        <br>
+        <input
+            id="location"
+            name="listing[location]"
+            value="<%= listing.location %>"
+            placeholder="Enter location"
+            type="text"
+            required
+        />
+        <br><br>
+
+
+        <!-- Submit -->
+        <button type="submit">EDIT</button>
+
+    </form>
+
+</body>
+
+</html>
+

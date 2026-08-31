@@ -1,0 +1,101 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wanderlust</title>
+
+    <link rel="stylesheet" href="/css/new.css">
+</head>
+
+<body>
+
+    <h3>Create a New Listing</h3>
+
+    <form method="POST" action="/listings" enctype="multipart/form-data">
+
+        <!-- Title -->
+        <label for="title">Title</label>
+        <br>
+        <input
+            id="title"
+            name="listing[title]"
+            placeholder="Enter title"
+            type="text"
+            required
+        />
+        <br><br>
+
+
+        <!-- Description -->
+        <label for="description">Description</label>
+        <br>
+        <textarea
+            id="description"
+            name="listing[description]"
+            placeholder="Enter description"
+            rows="5"
+        ></textarea>
+        <br><br>
+
+
+        <!-- Image -->
+        <label for="image">Upload Image</label>
+        <br>
+        <input
+            id="image"
+            name="listing[image]"
+            type="file"
+            
+        />
+        <br><br>
+
+
+        <!-- Price -->
+        <label for="price">Price</label>
+        <br>
+        <input
+            id="price"
+            name="listing[price]"
+            placeholder="Enter price"
+            type="number"
+            required
+        />
+        <br><br>
+
+
+        <!-- Country -->
+        <label for="country">Country</label>
+        <br>
+        <input
+            id="country"
+            name="listing[country]"
+            placeholder="Enter country"
+            type="text"
+            required
+        />
+        <br><br>
+
+
+        <!-- Location -->
+        <label for="location">Location</label>
+        <br>
+        <input
+            id="location"
+            name="listing[location]"
+            placeholder="Enter location"
+            type="text"
+            required
+        />
+        <br><br>
+
+
+        <!-- Submit -->
+        <button type="submit">Add Listing</button>
+
+    </form>
+
+</body>
+</html>
+

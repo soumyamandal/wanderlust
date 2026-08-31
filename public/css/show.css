@@ -1,0 +1,367 @@
+/* ============================= */
+/* BODY */
+/* ============================= */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f7f7f7;
+    color: #222;
+
+    overflow-x: hidden;
+}
+
+
+/* ============================= */
+/* TITLE */
+/* ============================= */
+
+.listing-title {
+    font-size: 30px;
+    font-weight: 600;
+
+    margin-bottom: 25px;
+
+    line-height: 1.3;
+}
+
+
+/* ============================= */
+/* LISTING IMAGE */
+/* ============================= */
+
+.listing-img {
+    width: 100%;
+
+    height: 450px;
+
+    object-fit: cover;
+
+    border-radius: 18px;
+
+    display: block;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.12);
+}
+
+
+/* ============================= */
+/* DETAILS */
+/* ============================= */
+
+.listing-details {
+    margin-top: 25px;
+
+    border-radius: 15px;
+
+    overflow: hidden;
+
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.07);
+}
+
+
+.listing-details .list-group-item {
+    padding: 16px;
+
+    font-size: 17px;
+
+    line-height: 1.5;
+
+    overflow-wrap: break-word;
+}
+
+
+/* ============================= */
+/* EDIT + DELETE */
+/* ============================= */
+
+.action-buttons {
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 12px;
+
+    margin-top: 25px;
+}
+
+
+.action-buttons form {
+    margin: 0;
+}
+
+
+.action-buttons .btn {
+    padding: 11px 20px;
+
+    font-weight: 600;
+
+    border-radius: 10px;
+}
+
+
+/* ============================= */
+/* REVIEW FORM */
+/* ============================= */
+
+.review-form {
+    width: 100%;
+
+    margin-top: 45px;
+
+    padding: 30px;
+
+    background-color: white;
+
+    border: 1px solid #e5e5e5;
+
+    border-radius: 18px;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+
+.review-form h4 {
+    margin-bottom: 25px;
+
+    font-size: 24px;
+
+    font-weight: 600;
+}
+
+
+.review-form .form-label {
+    font-weight: 600;
+}
+
+
+.review-form textarea {
+    resize: vertical;
+}
+
+
+.review-form .btn {
+    padding: 13px;
+
+    font-weight: 600;
+
+    border-radius: 10px;
+}
+
+
+/* ============================= */
+/* REVIEWS SECTION */
+/* ============================= */
+
+.reviews-section {
+    margin-top: 50px;
+
+    margin-bottom: 50px;
+}
+
+
+.reviews-heading {
+    font-size: 26px;
+
+    font-weight: 600;
+
+    margin-bottom: 25px;
+}
+
+
+/* ============================= */
+/* REVIEW CARD */
+/* ============================= */
+
+.review-card {
+    height: 100%;
+
+    padding: 22px;
+
+    background-color: white;
+
+    border: 1px solid #e5e5e5;
+
+    border-radius: 15px;
+
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.06);
+
+    display: flex;
+
+    flex-direction: column;
+}
+
+
+.review-rating {
+    font-size: 17px;
+
+    font-weight: 600;
+
+    margin-bottom: 15px;
+}
+
+
+.review-comment {
+    font-size: 15px;
+
+    line-height: 1.6;
+
+    color: #555;
+
+    flex-grow: 1;
+
+    overflow-wrap: break-word;
+}
+
+
+.review-card form {
+    margin-top: 15px;
+}
+
+
+.no-reviews {
+    background-color: white;
+
+    padding: 25px;
+
+    border-radius: 15px;
+
+    text-align: center;
+
+    color: #666;
+}
+
+
+/* ================================================= */
+/* TABLET / HALF SCREEN */
+/* ================================================= */
+
+@media (max-width: 991px) {
+
+    .listing-img {
+        height: 400px;
+    }
+
+    .listing-title {
+        font-size: 28px;
+    }
+
+}
+
+
+/* ================================================= */
+/* MOBILE */
+/* ================================================= */
+
+@media (max-width: 767px) {
+
+    body {
+        font-size: 15px;
+    }
+
+
+    .container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+
+    .listing-title {
+        font-size: 24px;
+
+        margin-bottom: 18px;
+    }
+
+
+    .listing-img {
+        height: 300px;
+
+        border-radius: 14px;
+    }
+
+
+    .listing-details {
+        margin-top: 20px;
+    }
+
+
+    .listing-details .list-group-item {
+        padding: 14px;
+
+        font-size: 15px;
+    }
+
+
+    /* Buttons become vertical */
+
+    .action-buttons {
+        flex-direction: column;
+
+        width: 100%;
+    }
+
+
+    .action-buttons .btn {
+        width: 100%;
+    }
+
+
+    .action-buttons form {
+        width: 100%;
+    }
+
+
+    .review-form {
+        margin-top: 35px;
+
+        padding: 20px;
+
+        border-radius: 14px;
+    }
+
+
+    .review-form h4 {
+        font-size: 21px;
+    }
+
+
+    .reviews-section {
+        margin-top: 40px;
+    }
+
+
+    .reviews-heading {
+        font-size: 23px;
+    }
+
+}
+
+
+/* ================================================= */
+/* VERY SMALL SCREEN */
+/* ================================================= */
+
+@media (max-width: 400px) {
+
+    .container {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+
+    .listing-img {
+        height: 250px;
+    }
+
+
+    .listing-title {
+        font-size: 21px;
+    }
+
+
+    .review-form {
+        padding: 16px;
+    }
+
+}

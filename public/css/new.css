@@ -1,0 +1,101 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 0;
+}
+
+/* Main container */
+form {
+    width: 90%;
+    max-width: 550px;
+    margin: 50px auto;
+    padding: 35px;
+    background-color: white;
+    border-radius: 18px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.08);
+}
+
+/* Heading */
+h3 {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 30px;
+    color: #222;
+}
+
+/* Inputs and textarea */
+input,
+textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 14px 16px;
+    margin-top: 8px;
+
+    border: 1px solid #ddd;
+    border-radius: 10px;
+
+    font-size: 15px;
+    font-family: inherit;
+
+    outline: none;
+    transition: 0.2s ease;
+}
+
+/* Textarea */
+textarea {
+    height: 120px;
+    resize: vertical;
+}
+
+/* Focus effect */
+input:focus,
+textarea:focus {
+    border-color: #ff385c;
+    box-shadow: 0 0 0 3px rgba(255, 56, 92, 0.1);
+}
+
+/* Placeholder */
+input::placeholder,
+textarea::placeholder {
+    color: #999;
+}
+
+/* Add button */
+button {
+    width: 100%;
+    padding: 14px;
+    margin-top: 10px;
+
+    border: none;
+    border-radius: 10px;
+
+    background-color: #ff385c;
+    color: white;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+/* Button hover */
+button:hover {
+    background-color: #e31c5f;
+    transform: translateY(-1px);
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+
+    form {
+        width: 85%;
+        padding: 25px;
+        margin-top: 30px;
+    }
+
+    h3 {
+        font-size: 24px;
+    }
+}

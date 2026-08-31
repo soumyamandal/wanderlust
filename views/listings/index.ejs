@@ -1,0 +1,61 @@
+<% layout("/layouts/boilerplate") %>
+
+
+<div class="container py-4">
+
+    <!-- Page Heading -->
+    <div class="row mb-4">
+        <div class="col-12">
+            <h1>All Listings</h1>
+        </div>
+    </div>
+
+
+    <!-- Listings -->
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
+
+        <% for(let listing of allListings) { %>
+
+            <div class="col">
+
+                <div class="card h-100 listing-card">
+
+                    <!-- Listing Image -->
+                    <a href="/listings/<%= listing._id %>">
+
+                        <img
+                            src="<%= listing.image.url %>"
+                            class="card-img-top listing-img"
+                            alt="listing_image"
+                        >
+
+                    </a>
+
+
+                    <!-- Listing Details -->
+                    <div class="card-body">
+
+                        <p class="card-text">
+
+                            <strong>
+                                <%= listing.title %>
+                            </strong>
+
+                            <br>
+
+                            ₹ <%= listing.price.toLocaleString("en-IN") %>
+                            / night
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        <% } %>
+
+    </div>
+
+</div>
