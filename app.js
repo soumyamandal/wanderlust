@@ -150,9 +150,9 @@ async function main() {
 
 // ================= HOME =================
 
-app.get("/listings", (req, res) => {
-    res.send("Hello, Express!");
-});
+// app.get("/listings", (req, res) => {
+//     res.send("Hello, Express!");
+// });
 
 
 // ================= ERROR HANDLING =================
