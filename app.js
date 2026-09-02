@@ -150,7 +150,7 @@ async function main() {
 
 // ================= HOME =================
 
-app.get("/", (req, res) => {
+app.get("/listings", (req, res) => {
     res.send("Hello, Express!");
 });
 
